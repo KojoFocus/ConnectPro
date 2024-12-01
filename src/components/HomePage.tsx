@@ -7,16 +7,17 @@ import Footer from './footer'; // Footer component (import if needed)
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="m-0 p-0"> {/* Remove margins and paddings for the entire page */}
       {/* Hero Section */}
       <HeroSection />
-      <div className="bg-[#F3EFE8]">
+      
+      <div className="bg-[#B0D0D3] m-0 p-0"> {/* Remove margins and paddings here as well */}
         <Programs />
         <SuccessStories />
-        <GetInvolved/>
-        <ContactUs/>
-        <Footer/>
-        </div>
+        <GetInvolved />
+        <ContactUs />
+        <Footer />
+      </div>
     </div>
   );
 };
