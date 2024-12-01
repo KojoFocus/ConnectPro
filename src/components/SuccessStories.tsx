@@ -2,22 +2,23 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const SuccessStories = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to track collapse open/close
+  const [isOpen, setIsOpen] = useState(false); // Track collapse open/close state
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="collapse bg-[#B0D0D3] rounded-lg mb-4"> {/* Background color and rounded corners */}
+    <div className="collapse bg-[#B0D0D3] mx-0 px-4 rounded-none mt-0 pt-0"> {/* Added pt-0 here */}
       <input
         type="checkbox"
-        checked={isOpen} // Use state to control the checkbox
-        onChange={handleToggle}
+        checked={isOpen} // Control the checkbox state
+        onChange={handleToggle} // Toggle state when checkbox changes
         className="hidden"
+        aria-label="Toggle success stories section"
       />
       <div
-        className="collapse-title text-xl font-medium cursor-pointer"
+        className="collapse-title text-xl font-medium cursor-pointer pt-0" // Added pt-0 here
         onClick={handleToggle} // Toggle on title click
       >
         <div className="flex items-center justify-between">
@@ -32,8 +33,8 @@ const SuccessStories = () => {
         <div className="w-full h-[1px] bg-sky-500 mt-2"></div>
       </div>
       {isOpen && (
-        <div className="collapse-content p-4">
-          {/* Detailed content for Success Stories */}
+        <div className="collapse-content mx-0 p-4"> {/* Removed padding here */}
+          {/* Section Title */}
           <h2 className="text-2xl font-semibold mb-4 text-[#023347]">Our Success Stories</h2>
           <p className="text-base text-[#023347]">
             Our programs have helped many entrepreneurs achieve their goals and grow their businesses. Here are a few inspiring success stories from participants in our programs.

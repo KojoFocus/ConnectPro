@@ -9,7 +9,7 @@ const GetInvolved = () => {
   };
 
   return (
-    <div className="collapse bg-[#B0D0D3] rounded-lg mb-4"> {/* Styled with rounded corners */}
+    <div className="collapse bg-[#B0D0D3] mx-0 px-4 rounded-none mt-0 pt-0"> {/* Added pt-0 here */}
       <input
         type="checkbox"
         checked={isOpen} // Control open/close state
@@ -17,7 +17,7 @@ const GetInvolved = () => {
         className="hidden"
       />
       <div
-        className="collapse-title text-xl font-medium cursor-pointer"
+        className="collapse-title text-xl font-medium cursor-pointer pt-0" // Added pt-0 here
         onClick={handleToggle} // Toggle on title click
       >
         <div className="flex items-center justify-between">
@@ -32,7 +32,7 @@ const GetInvolved = () => {
         <div className="w-full h-[1px] bg-sky-500 mt-2"></div>
       </div>
       {isOpen && (
-        <div className="collapse-content p-4">
+        <div className="collapse-content p-0 m-0"> {/* Removed padding here */}
           {/* Section Title */}
           <h2 className="text-2xl font-semibold text-[#023347] mb-4">How You Can Get Involved</h2>
           <p className="text-[#023347] mb-4">

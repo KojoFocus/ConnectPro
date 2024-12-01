@@ -11,7 +11,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <HeroSection />
       
-      <div className="bg-[#B0D0D3] m-0 p-0"> {/* Remove margins and paddings here as well */}
+      <div className="bg-[#036082] m-0 p-0 pb-0 mb-0"> {/* Remove margins and paddings here as well */}
         <Programs />
         <SuccessStories />
         <GetInvolved />
