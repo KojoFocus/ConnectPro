@@ -1,7 +1,16 @@
 import logo from '../assets/logo.png'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa"; // Import the scroll to top icon
 
 const Footer = () => {
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="bg-[#023347] text-white py-6 mt-0">
       <div className="container mx-auto px-6 py-0 md:px-10">
@@ -15,49 +24,10 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between">
-            <h3 className="text-lg font-semibold mb-4 sm:mb-0">Quick Links</h3>
-            <ul className="flex space-x-6">
-              <li>
-                <a
-                  href="#home"
-                  className="text-sm hover:text-[#F4A261] transition duration-300"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#features"
-                  className="text-sm hover:text-[#F4A261] transition duration-300"
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-sm hover:text-[#F4A261] transition duration-300"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-sm hover:text-[#F4A261] transition duration-300"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Social Media Links */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between">
-            <h3 className="text-lg font-semibold mb-4 sm:mb-0">Follow Us</h3>
-            <div className="flex space-x-6">
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -118,6 +88,15 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+      {/* Scroll to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 bg-[#F4A261] text-[#023347] rounded-full p-2 shadow-lg hover:bg-[#e08c4a] transition duration-300"
+      >
+        {/* Set a smaller size for the scroll icon */}
+        <FaArrowUp className="w-4 h-4" />  {/* Set width and height explicitly to 16px */}
+      </button>
     </div>
   );
 };
