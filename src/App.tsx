@@ -1,5 +1,6 @@
 // import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/footer";
 import GetInvolved from "./components/GetInvolved";
 import HeroSection from "./components/HeroSection";
 // import NavBar from "./components/NavBar";
@@ -18,6 +19,7 @@ export default function App() {
         <SuccessStories />
         <GetInvolved/>
         <ContactUs/>
+        <Footer/>
         </div>
        
       </div>
