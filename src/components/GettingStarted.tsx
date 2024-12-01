@@ -3,12 +3,14 @@ import { Link } from "react-router-dom"; // Import Link for routing
 import Navbar from "./NavBar"; // Match the casing exactly
 
 
+
 const GettingStarted = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-[#036082] to-[#023347] text-white py-12 px-6 md:px-16">
       {/* Navbar from the Hero Section */}
       <Navbar />
-
+<br></br>
+<br></br>
       <h1 className="text-4xl md:text-5xl text-center font-bold mb-8 text-[#F4A261]">
         Getting Started with ConnectPro
       </h1>

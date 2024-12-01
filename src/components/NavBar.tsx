@@ -7,12 +7,15 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex w-full h-[100px] justify-between items-center px-6 md:px-10">
+    <div className="flex w-full h-[30px] justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0">
+      {/* Logo */}
       <img
         src={logo}
         className="max-w-[80px] md:max-w-[100px] h-auto"
         alt="Logo"
       />
+      
+      {/* Desktop Navigation Links */}
       <ul className="hidden md:flex space-x-6 lg:space-x-8">
         <li>
           <Link
@@ -51,6 +54,8 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      {/* Hamburger Menu Button */}
       <button
         className="md:hidden text-[#F4A261] text-2xl"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -58,6 +63,7 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </button>
 
+      {/* Mobile Menu */}
       {menuOpen && (
         <div
           className="md:hidden fixed top-0 right-0 w-full h-full bg-black bg-opacity-50 z-20"
@@ -111,6 +117,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        
       )}
     </div>
   );

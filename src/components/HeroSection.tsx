@@ -1,4 +1,4 @@
-import Navbar from "./NavBar"; // Match the casing exactly
+import Navbar from "./NavBar"; // Import the correct Navbar
 import { Link } from "react-router-dom"; // Import Link for routing
 import logo from "../assets/logo.png"; // Import the logo
 
@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="hero bg-gradient-to-r from-[#036082] to-[#023347] w-full h-[2/3] flex flex-col items-center justify-between py-8">
       {/* Navbar Component */}
-      <Navbar />
+      <Navbar /> 
 
       <div className="hero-content flex flex-col-reverse lg:flex-row items-center text-center lg:text-left px-6 md:px-10 mt-6 lg:mt-0">
         <div className="flex-1">
@@ -14,7 +14,10 @@ const HeroSection = () => {
             Connecting Ideas to Opportunities
           </h1>
           <p className="py-4 md:py-6 text-sm md:text-base text-white">
-            Every business begins with an idea, but turning it into success takes guidance and resources. At ConnectPro, we offer coaching, mentorship, and access to raw materials, packaging solutions, and more. From spark to success, we’re here to help your vision thrive.
+            Every business begins with an idea, but turning it into success 
+            takes guidance and resources. At ConnectPro, we offer coaching, 
+            mentorship, and access to raw materials, packaging solutions, 
+            and more. From spark to success, we’re here to help your vision thrive.
           </p>
           <div className="flex justify-center lg:justify-start">
             <Link to="/getting-started">
