@@ -1,108 +1,119 @@
-import logo from "../assets/logo.png";
+import { useState } from "react";
+import { FaHome, FaStar, FaInfoCircle, FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link for routing
+import logo from "../assets/logo.png"; // Import the logo
 
-const NavBar = () => {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <>
-      <div className="navbar bg-[#036082] shadow-lg py-1">
-        <div className="flex-1">
-          <a className="text-xl font-bold text-primary" href="/">
-            <img src={logo} className="max-w-[150px] h-auto" alt="Logo" />
-          </a>
-        </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 space-x-4 hidden lg:flex">
-            <li>
-              <a
-                href="#home"
-                className="text-lg font-medium hover:text-primary"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#features"
-                className="text-lg font-medium hover:text-primary"
-              >
-                Features
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="text-lg font-medium hover:text-primary"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-lg font-medium hover:text-primary"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-          <div className="dropdown dropdown-end lg:hidden">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
+    <div className="flex w-full h-[100px] justify-between items-center px-6 md:px-10">
+      <img
+        src={logo}
+        className="max-w-[80px] md:max-w-[100px] h-auto"
+        alt="Logo"
+      />
+      <ul className="hidden md:flex space-x-6 lg:space-x-8">
+        <li>
+          <Link
+            to="/"
+            className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+          >
+            <FaHome className="mr-2" />
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/programs"
+            className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+          >
+            <FaStar className="mr-2" />
+            Features
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/about"
+            className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+          >
+            <FaInfoCircle className="mr-2" />
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/contact"
+            className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+          >
+            <FaPhoneAlt className="mr-2" />
+            Contact
+          </Link>
+        </li>
+      </ul>
+      <button
+        className="md:hidden text-[#F4A261] text-2xl"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      {menuOpen && (
+        <div
+          className="md:hidden fixed top-0 right-0 w-full h-full bg-black bg-opacity-50 z-20"
+          onClick={() => setMenuOpen(false)}
+        >
+          <div
+            className="absolute top-[100px] right-0 p-4 w-56 bg-base-200 bg-opacity-30 backdrop-blur-sm rounded-lg shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ul className="menu rounded-box space-y-4">
               <li>
-                <a
-                  href="#home"
-                  className="text-lg font-medium hover:text-primary"
+                <Link
+                  to="/"
+                  className="flex items-center text-[#F4A261] text-lg font-medium hover:underline"
+                  onClick={() => setMenuOpen(false)}
                 >
+                  <FaHome className="mr-2" />
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#features"
-                  className="text-lg font-medium hover:text-primary"
+                <Link
+                  to="/programs"
+                  className="flex items-center text-[#F4A261] text-lg font-medium hover:underline"
+                  onClick={() => setMenuOpen(false)}
                 >
+                  <FaStar className="mr-2" />
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="text-lg font-medium hover:text-primary"
+                <Link
+                  to="/about"
+                  className="flex items-center text-[#F4A261] text-lg font-medium hover:underline"
+                  onClick={() => setMenuOpen(false)}
                 >
+                  <FaInfoCircle className="mr-2" />
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  className="text-lg font-medium hover:text-primary"
+                <Link
+                  to="/contact"
+                  className="flex items-center text-[#F4A261] text-lg font-medium hover:underline"
+                  onClick={() => setMenuOpen(false)}
                 >
+                  <FaPhoneAlt className="mr-2" />
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </>
+      )}
+    </div>
   );
 };
 
-export default NavBar;
+export default Navbar;
