@@ -12,16 +12,16 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#023347] text-white py-6 mt-0">
+    <div className="bg-[#036082] text-white py-6 mt-0">
       <div className="container mx-auto px-6 py-0 md:px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and description */}
           <div className="flex flex-col items-center sm:items-start">
             <img src={logo} className="max-w-[120px] mb-4" alt="Logo" />
-            <p className="text-sm md:text-base text-center sm:text-left">
+            {/* <p className="text-sm md:text-base text-center sm:text-left">
               Empowering entrepreneurs with the resources and support needed for
               success. Join us today to take your business to the next level.
-            </p>
+            </p> */}
           </div>
 
           {/* Social Media Links */}

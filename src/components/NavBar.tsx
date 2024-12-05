@@ -7,7 +7,9 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex w-full h-[30px] justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0">
+    <div className="flex w-full h-[70px] bg-[#036082] justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0">
+   
+    {/* // <div className="flex w-full h-[70px] bg-[#023347] justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0"> */}
       {/* Logo */}
       <img
         src={logo}

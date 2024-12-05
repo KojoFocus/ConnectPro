@@ -9,7 +9,7 @@ const Programs = () => {
   };
 
   return (
-    <div className="collapse bg-gradient-to-r from-[#036082] to-[#023347] text-white mx-0 px-4 rounded-lg shadow-md">
+    <div className="collapse bg-white text-black mx-0 px-4 rounded-none shadow-md">
       <input
         type="checkbox"
         checked={isOpen} // Use state to control the checkbox
@@ -36,15 +36,15 @@ const Programs = () => {
           <h3 className="text-2xl font-semibold mb-4 text-[#F4A261]">
             Connect Pro
           </h3>
-          <p className="text-base text-white">
+          <p className="text-base text-black">
             Connect Pro is designed to bridge the gap between budding
             entrepreneurs and the resources they need to grow and thrive.
           </p>
-          <p className="mt-2 text-white">
+          <p className="mt-2 text-black">
             The program connects entrepreneurs to a network of investors,
             mentors, and peers to help foster innovation and business growth.
           </p>
-          <p className="mt-2 text-white">
+          <p className="mt-2 text-black">
             Our goal is to ensure that entrepreneurs have the tools and support
             they need to succeed, with a focus on sustainable business
             practices.
@@ -54,7 +54,7 @@ const Programs = () => {
             <h4 className="text-xl font-semibold text-[#F4A261]">
               Program Benefits:
             </h4>
-            <ul className="list-disc ml-6 mt-2 text-white">
+            <ul className="list-disc ml-6 mt-2 text-black">
               <li>Access to funding opportunities</li>
               <li>Networking with industry experts</li>
               <li>Personalized mentorship and guidance</li>
@@ -75,10 +75,10 @@ const Programs = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#036082] to-[#023347] opacity-30"></div>
               </div>
               <div className="p-4">
-                <h4 className="text-lg font-semibold text-white mb-2">
+                <h4 className="text-lg font-semibold text-black mb-2">
                   Program Overview
                 </h4>
-                <p className="text-white">
+                <p className="text-black">
                   An overview of the Connect Pro program, including all the key
                   features and how it helps entrepreneurs grow.
                 </p>

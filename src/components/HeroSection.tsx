@@ -4,7 +4,7 @@ import logo from "../assets/logo.png"; // Import the logo
 
 const HeroSection = () => {
   return (
-    <div className="hero bg-gradient-to-r from-[#036082] to-[#023347] w-full h-[2/3] flex flex-col items-center justify-between py-8">
+    <div className="hero bg-white w-full h-[2/3] flex flex-col items-center justify-between ">
       {/* Navbar Component */}
       <Navbar /> 
 
@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1 className="text-3xl md:text-5xl text-[#F4A261] font-bold">
             Connecting Ideas to Opportunities
           </h1>
-          <p className="py-4 md:py-6 text-sm md:text-base text-white">
+          <p className="py-4 md:py-6 text-sm md:text-base text-black">
             Every business begins with an idea, but turning it into success 
             takes guidance and resources. At ConnectPro, we offer coaching, 
             mentorship, and access to raw materials, packaging solutions, 
@@ -21,7 +21,7 @@ const HeroSection = () => {
           </p>
           <div className="flex justify-center lg:justify-start">
             <Link to="/getting-started">
-              <button className="btn bg-[#F4A261] text-[#036082] px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-[#e08c4a] transition duration-300">
+              <button className="btn bg-[#F4A261] text-white px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-[#e08c4a] transition duration-300">
                 GET STARTED
               </button>
             </Link>

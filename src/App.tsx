@@ -6,6 +6,7 @@ import ContactUs from "./components/ContactUs";
 // import Footer from "./components/footer";
 import GetInvolved from "./components/GetInvolved";
 import HomePage from "./components/HomePage";
+import GetStartedPage from "./components/GetStartedPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           {/* HomePage includes HeroSection, so no need to route for HeroSection */}
           <Route path="/" element={<HomePage />} />
           <Route path="/getting-started" element={<GettingStarted />} />
+          <Route path="/get-started" element={<GetStartedPage />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/contact" element={<ContactUs />} />

@@ -9,7 +9,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="collapse bg-gradient-to-r from-[#036082] to-[#023347] text-white mx-0 px-4 rounded-none">
+    <div className="collapse bg-white text-black mx-0 px-4 rounded-none">
       <input
         type="checkbox"
         checked={isOpen} // Use state to control the checkbox
@@ -34,7 +34,7 @@ const ContactUs = () => {
         <div className="collapse-content p-4 mx-0">
           {/* Section Title */}
           <h2 className="text-2xl font-semibold mb-4 text-[#F4A261]">Get in Touch</h2>
-          <p className="text-base text-white mb-4">
+          <p className="text-base text-black mb-4">
             Have questions or need more information? Feel free to reach out to us via the contact form below or through our social media channels.
           </p>
 

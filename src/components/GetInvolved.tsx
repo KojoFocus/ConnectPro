@@ -7,7 +7,7 @@ const GetInvolved = () => {
   const handleToggle = () => setIsOpen((prev) => !prev); // Toggle state
 
   return (
-    <div className="collapse bg-gradient-to-r from-[#036082] to-[#023347] text-white mx-0 px-4 rounded-none">
+    <div className="collapse bg-white text-black mx-0 px-4 rounded-none">
       <input
         type="checkbox"
         checked={isOpen} // Sync state with checkbox for control
@@ -39,7 +39,7 @@ const GetInvolved = () => {
       >
         {/* Section Title */}
         <h2 className="text-2xl font-semibold mb-4 text-[#F4A261]">How You Can Get Involved</h2>
-        <p className="text-base text-white mb-4">
+        <p className="text-base text-black mb-4">
           We welcome anyone who shares our mission to help entrepreneurs and communities grow.
           Here are a few ways you can contribute and make a difference.
         </p>
@@ -57,8 +57,8 @@ const GetInvolved = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#036082] to-[#023347] opacity-30"></div>
             </div>
             <div className="p-4">
-              <h4 className="text-lg font-semibold text-white mb-2">Volunteer with Us</h4>
-              <p className="text-white">
+              <h4 className="text-lg font-semibold text-black mb-2">Volunteer with Us</h4>
+              <p className="text-black">
                 Volunteering is a great way to give back to the community. Join our network of volunteers
                 who help mentor, teach, and guide budding entrepreneurs.
               </p>

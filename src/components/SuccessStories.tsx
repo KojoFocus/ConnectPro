@@ -9,7 +9,7 @@ const SuccessStories = () => {
   };
 
   return (
-    <div className="collapse bg-gradient-to-r from-[#036082] to-[#023347] text-white mx-0 px-4 rounded-lg shadow-md">
+    <div className="collapse bg-white text-black mx-0 px-4 rounded-none shadow-md">
       <input
         type="checkbox"
         checked={isOpen} // Control the checkbox state
@@ -35,7 +35,7 @@ const SuccessStories = () => {
         <div className="collapse-content p-4 mx-0">
           {/* Section Title */}
           <h2 className="text-2xl font-semibold mb-4 text-[#F4A261]">Our Success Stories</h2>
-          <p className="text-base text-white">
+          <p className="text-base text-black">
             Our programs have helped many entrepreneurs achieve their goals and grow their businesses. Here are a few inspiring success stories from participants in our programs.
           </p>
 
@@ -53,7 +53,7 @@ const SuccessStories = () => {
               </div>
               <div className="p-4">
                 <h4 className="text-lg font-semibold text-white mb-2">John Doe's Story</h4>
-                <p className="text-white">
+                <p className="text-black">
                   John, a small business owner, participated in our Connect Pro program and successfully secured funding to expand his operations, resulting in a 50% increase in sales.
                 </p>
               </div>
