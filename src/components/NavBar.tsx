@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { FaHome, FaStar, FaInfoCircle, FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaHome,
+  FaStar,
+  FaInfoCircle,
+  FaPhoneAlt,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 import { Link } from "react-router-dom"; // Import Link for routing
 import logo from "../assets/logo.png"; // Import the logo
 
@@ -7,16 +14,16 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex w-full h-[70px] bg-[#036082] justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0">
-   
-    {/* // <div className="flex w-full h-[70px] bg-[#023347] justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0"> */}
-      {/* Logo */}
+    <>
+    
+    
+    <div className="flex w-full h-[70px]  justify-between items-center mt-0 mb-0 px-6 md:px-10 mb-0">
       <img
         src={logo}
         className="max-w-[80px] md:max-w-[100px] h-auto"
         alt="Logo"
       />
-      
+
       {/* Desktop Navigation Links */}
       <ul className="hidden md:flex space-x-6 lg:space-x-8">
         <li>
@@ -64,6 +71,7 @@ const Navbar = () => {
       >
         {menuOpen ? <FaTimes /> : <FaBars />}
       </button>
+      
 
       {/* Mobile Menu */}
       {menuOpen && (
@@ -119,9 +127,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        
       )}
     </div>
+    <div className="w-full h-[1px] bg-[#F4A261] mt-2"></div>
+    </>
   );
 };
 

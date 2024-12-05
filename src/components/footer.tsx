@@ -12,7 +12,11 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#036082] text-white py-6 mt-0">
+    <>
+      
+    
+    <div className="bg-gradient-to-r from-[#036082] to-[#023347] text-white py-6 mt-0">
+    
       <div className="container mx-auto px-6 py-0 md:px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and description */}
@@ -98,6 +102,7 @@ const Footer = () => {
         <FaArrowUp className="w-4 h-4" />  {/* Set width and height explicitly to 16px */}
       </button>
     </div>
+    </>
   );
 };
 
