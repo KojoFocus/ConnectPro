@@ -88,7 +88,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-[#F4A261] pt-4 mt-6 text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+            &copy; {new Date().getFullYear()} ConnectPro. All rights reserved.
           </p>
         </div>
       </div>
