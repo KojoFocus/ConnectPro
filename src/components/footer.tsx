@@ -72,14 +72,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-3">
               <li className="text-sm">
-                <span className="font-semibold">Phone:</span> +1 234 567 890
+                <span className="font-semibold">Phone:</span> +233 54 048 4052
               </li>
               <li className="text-sm">
-                <span className="font-semibold">Email:</span> contact@yourcompany.com
+                <span className="font-semibold">Email:</span> contact@connectpro.com
               </li>
               <li className="text-sm">
-                <span className="font-semibold">Address:</span> 123 Your Street, City,
-                Country
+                <span className="font-semibold">Address:</span> 123 East Legon, Accra,
+               Ghana
               </li>
             </ul>
           </div>
