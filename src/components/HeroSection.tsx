@@ -1,13 +1,13 @@
-import Navbar from "./NavBar"; // Import the correct Navbar
+// import Navbar from "./NavBar"; // Import the correct Navbar
 import { Link } from "react-router-dom"; // Import Link for routing
 import logo from "../assets/logo.png"; // Import the logo
 
 const HeroSection = () => {
   return (
     <>
-    <div className="w-full min-h-screen bg-gradient-to-r from-[#036082] to-[#023347] text-white  px-6 md:px-16">
+    <div className="w-full min-h-screen bg-gradient-to-r from-[#036082] to-[#023347] text-white mb-0 mt-0 py-0 px-6 md:px-16">
       {/* Navbar Component */}
-      <Navbar /> 
+      {/* <Navbar />  */}
 
       <div className="hero-content flex flex-col-reverse lg:flex-row items-center text-center lg:text-left px-6 md:px-10 mt-6 lg:mt-0">
       

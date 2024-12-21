@@ -68,21 +68,24 @@ const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="flex flex-col items-center sm:items-start">
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <ul className="space-y-3">
-              <li className="text-sm">
-                <span className="font-semibold">Phone:</span> +233 54 048 4052
-              </li>
-              <li className="text-sm">
-                <span className="font-semibold">Email:</span> contact@connectpro.com
-              </li>
-              <li className="text-sm">
-                <span className="font-semibold">Address:</span> 123 East Legon, Accra,
-               Ghana
-              </li>
-            </ul>
-          </div>
+          <div className="flex justify-center items-center">
+  <div className="flex flex-col items-center sm:items-start">
+    <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+    <ul className="space-y-3">
+      <li className="text-sm">
+        <span className="font-semibold">Phone:</span> +233 54 048 4052
+      </li>
+      <li className="text-sm">
+        <span className="font-semibold">Email:</span> contact@connectpro.com
+      </li>
+      <li className="text-sm">
+        <span className="font-semibold">Address:</span> 123 East Legon, Accra,
+        Ghana
+      </li>
+    </ul>
+  </div>
+</div>
+
         </div>
 
         {/* Footer Bottom */}
@@ -96,10 +99,10 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-[#F4A261] text-[#023347] rounded-full p-2 shadow-lg hover:bg-[#e08c4a] transition duration-300"
+        className="fixed bottom-6 right-6 bg-[#F4A261] text-[#023347] text-3xl rounded-full p-2 shadow-lg hover:bg-[#e08c4a] transition duration-300"
       >
         {/* Set a smaller size for the scroll icon */}
-        <FaArrowUp className="w-4 h-4" />  {/* Set width and height explicitly to 16px */}
+        <FaArrowUp  />  {/* Set width and height explicitly to 16px */}
       </button>
     </div>
     </>

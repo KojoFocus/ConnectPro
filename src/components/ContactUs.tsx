@@ -10,7 +10,7 @@ const ContactUs = () => {
 
   return (
     <>
-    <div className="w-full bg-gradient-to-r from-[#036082] to-[#023347] text-white px-6 md:px-16 py-2">
+    <div className="w-full bg-gradient-to-r from-[#036082] to-[#023347] text-white mt-0 px-6 md:px-16 py-2">
       <div className="collapse bg-[#036082] text-white rounded-lg shadow-lg">
         <input
           type="checkbox"
@@ -22,7 +22,7 @@ const ContactUs = () => {
           className="collapse-title text-xl font-medium cursor-pointer"
           onClick={handleToggle} // Toggle on title click
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <span className="text-[#F4A261]">CONTACT US</span>
             {isOpen ? (
               <FaChevronUp className="text-xl text-[#F4A261]" />
