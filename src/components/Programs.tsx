@@ -5,18 +5,12 @@ const Programs = () => {
   const [isOpen, setIsOpen] = useState(false); // State to track collapse open/close
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev); // Toggle the open state
   };
 
   return (
     <div className="w-full bg-gradient-to-r from-[#036082] to-[#023347] text-white px-6 md:px-16 py-2">
-      <div className="collapse bg-[#036082] text-white rounded-lg shadow-lg">
-        <input
-          type="checkbox"
-          checked={isOpen}
-          onChange={handleToggle}
-          className="hidden"
-        />
+      <div className="bg-[#036082] text-white rounded-lg shadow-lg">
         <div
           className="collapse-title text-xl font-semibold cursor-pointer"
           onClick={handleToggle}
@@ -29,10 +23,10 @@ const Programs = () => {
               <FaChevronDown className="text-xl text-[#F4A261]" />
             )}
           </div>
-          {/* <div className="w-full h-[1px] bg-[#F4A261] mt-2"></div> */}
         </div>
+
         {isOpen && (
-          <div className="collapse-content mt-4">
+          <div className="mt-4">
             {/* Detailed content for Connect Pro program */}
             <h3 className="text-2xl font-bold mb-4 text-[#F4A261]">
               Connect Pro
