@@ -37,6 +37,7 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Success Stories */}
+          {/* Success Stories */}
           <div className="collapse collapse-arrow border-b border-[#034d60]">
             <input
               type="checkbox"
@@ -50,6 +51,7 @@ const HomePage: React.FC = () => {
               <SuccessStories />
             </div>
           </div>
+
 
           {/* Get Involved */}
           <div className="collapse collapse-arrow border-b border-[#034d60]">
