@@ -1,9 +1,8 @@
 const GetInvolved = () => {
   return (
     <>
-    
       {/* Title Section */}
-      <div className="bg-[#036082] text-white rounded-lg shadow-lg p-6">
+      <div className="bg-[#036082] text-white rounded-lg shadow-lg p-6 md:p-12 mb-8">
         <h2 className="text-xl font-semibold text-[#F4A261]">GET INVOLVED</h2>
         <p className="text-base leading-relaxed text-white mt-4">
           We welcome anyone who shares our mission to help entrepreneurs and
@@ -15,7 +14,7 @@ const GetInvolved = () => {
       {/* Cards Section */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Volunteer Card */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4">
           <img
             src="https://via.placeholder.com/300x200"
             alt="Volunteer"
@@ -34,7 +33,7 @@ const GetInvolved = () => {
         </div>
 
         {/* Donate Card */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4">
           <img
             src="https://via.placeholder.com/300x200"
             alt="Donate"
@@ -53,7 +52,7 @@ const GetInvolved = () => {
         </div>
 
         {/* Partner Card */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4">
           <img
             src="https://via.placeholder.com/300x200"
             alt="Partner"
@@ -83,7 +82,6 @@ const GetInvolved = () => {
           <li>Help us spread the word on social media to encourage more participation.</li>
         </ul>
       </div>
-    
     </>
   );
 };

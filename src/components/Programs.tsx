@@ -1,6 +1,6 @@
 const Programs = () => {
   return (
-    <div className="bg-[#036082] text-white rounded-lg shadow-lg">
+    <div className="bg-[#036082] text-white rounded-lg shadow-lg p-4">
       <div className="mt-4">
         {/* Detailed content for Connect Pro program */}
         <h3 className="text-2xl font-bold mb-4 text-[#F4A261]">Connect Pro</h3>
