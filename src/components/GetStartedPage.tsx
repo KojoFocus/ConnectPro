@@ -1,11 +1,12 @@
-import Navbar from "./NavBar"; // Import the Navbar component
-import { Link } from "react-router-dom"; // Import Link for routing
+
+// import { Link } from "react-router-dom"; // Import Link for routing
+import Footer from "./footer";
 
 const GetStartedPage = () => {
   return (
     <>
-      <Navbar />
-      <div className="w-full min-h-screen bg-gradient-to-r from-[#036082] to-[#023347] text-white px-6 md:px-16">
+     <div className="relative z-10 bg-[#F9FAFB]  text-gray-800 m-0 p-6">
+      <div className="w-full min-h-screen bg-gradient-to-r from-[#036082] to-[#023347] rounded-lg shadow-lg text-white px-6 md:px-16 pb-10">
         <br></br>
         <br></br>
         <h1 className="text-4xl md:text-5xl text-center font-bold mb-8 text-[#F4A261]">
@@ -67,14 +68,17 @@ const GetStartedPage = () => {
         </div>
 
         {/* Back to Home Section */}
-        <div className="text-center mt-8">
+        {/* <div className="text-center mt-8">
           <Link to="/">
             <button className="btn bg-transparent border-2 border-[#F4A261] text-[#F4A261] px-6 py-3 rounded-md hover:bg-[#F4A261] hover:text-white transition duration-300">
               Back to Home
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
+      </div>
+       {/* Footer */}
+       <Footer />
     </>
   );
 };
