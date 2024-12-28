@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web"; // Importing from react-spring
 import ContactUs from "./ContactUs";
 import GetInvolved from "./GetInvolved";
@@ -16,26 +16,24 @@ const HomePage: React.FC = () => {
   const getInvolvedRef = useRef<HTMLDivElement | null>(null);
   const contactUsRef = useRef<HTMLDivElement | null>(null);
 
+  // Trigger scroll to section after it becomes active
+  useEffect(() => {
+    if (activeSection) {
+      const currentSectionRef =
+        activeSection === "Programs"
+          ? programsRef
+          : activeSection === "SuccessStories"
+          ? successStoriesRef
+          : activeSection === "GetInvolved"
+          ? getInvolvedRef
+          : contactUsRef;
+
+      currentSectionRef?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [activeSection]); // This hook runs every time activeSection changes
+
   const toggleSection = (section: string) => {
     setActiveSection(activeSection === section ? null : section);
-
-    // Smooth scroll to the section content
-    switch (section) {
-      case "Programs":
-        programsRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "SuccessStories":
-        successStoriesRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "GetInvolved":
-        getInvolvedRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "ContactUs":
-        contactUsRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      default:
-        break;
-    }
   };
 
   // React Spring for slide-in effect
