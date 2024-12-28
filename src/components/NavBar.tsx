@@ -16,62 +16,62 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="flex w-full h-[70px] bg-gradient-to-r from-[#036082] to-[#023347] justify-between items-center py-0 px-6 md:px-10">
-        {/* Logo */}
-        <img
-          src={logo}
-          className="max-w-[80px] md:max-w-[100px] h-auto"
-          alt="Logo"
-        />
+      <div className="flex w-full h-[70px] bg-gradient-to-r from-[#036082] to-[#023347] justify-between items-center px-4 md:px-10">
+  {/* Logo */}
+  <img
+    src={logo}
+    className="max-w-[80px] md:max-w-[100px] h-auto"
+    alt="Logo"
+  />
 
-        {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex space-x-6 lg:space-x-8">
-          <li>
-            <Link
-              to="/"
-              className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
-            >
-              <FaHome className="mr-2" />
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/programs"
-              className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
-            >
-              <FaStar className="mr-2" />
-              Features
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
-            >
-              <FaInfoCircle className="mr-2" />
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
-            >
-              <FaPhoneAlt className="mr-2" />
-              Contact
-            </Link>
-          </li>
-        </ul>
+  {/* Desktop Navigation Links */}
+  <ul className="hidden md:flex space-x-6 lg:space-x-8">
+    <li>
+      <Link
+        to="/"
+        className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+      >
+        <FaHome className="mr-2" />
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/programs"
+        className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+      >
+        <FaStar className="mr-2" />
+        Features
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/about"
+        className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+      >
+        <FaInfoCircle className="mr-2" />
+        About
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/contact"
+        className="flex items-center text-[#F4A261] text-sm md:text-lg font-medium hover:underline"
+      >
+        <FaPhoneAlt className="mr-2" />
+        Contact
+      </Link>
+    </li>
+  </ul>
 
-        {/* Hamburger Menu Button */}
-        <button
-          className="md:hidden text-[#F4A261] text-4xl"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      </div>
+  {/* Hamburger Menu Button */}
+  <button
+    className="md:hidden text-[#F4A261] text-4xl mr-4"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? <FaTimes /> : <FaBars />}
+  </button>
+</div>
 
       {/* Mobile Menu */}
       {menuOpen && (
