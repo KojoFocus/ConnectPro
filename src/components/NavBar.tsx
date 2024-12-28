@@ -130,7 +130,7 @@ const Navbar = () => {
       )}
 
       {/* Divider Line */}
-      <div className="w-full h-[1px] bg-[#F4A261] mt-2"></div>
+      <div className="w-full h-[1px] bg-[#F4A261] mt-0"></div>
     </>
   );
 };

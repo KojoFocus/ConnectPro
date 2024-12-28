@@ -5,9 +5,9 @@ import logo from "../assets/logo.png"; // Import the logo
 const HeroSection = () => {
   return (
     <>
+    <div className="relative  bg-gradient-to-r from-[#036082] to-[#023347]  text-gray-800 m-0 p-2">
     <div className="w-full min-h-screen bg-gradient-to-r from-[#036082] to-[#023347] text-white mb-0 mt-0 py-0 px-6 md:px-16">
-      {/* Navbar Component */}
-      {/* <Navbar />  */}
+     
 
       <div className="hero-content flex flex-col-reverse lg:flex-row items-center text-center lg:text-left px-6 md:px-10 mt-6 lg:mt-0">
       
@@ -40,7 +40,7 @@ const HeroSection = () => {
       </div>
       <div className="w-full h-[1px] bg-[#F4A261] mt-2"></div>
     </div>
-   
+    </div>
     </>
   );
 };
