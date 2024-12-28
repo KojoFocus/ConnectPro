@@ -3,24 +3,20 @@ const ContactUs = () => {
     <>
       {/* Title Section */}
       <div className="bg-[#036082] text-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-semibold text-[#F4A261]">CONTACT US</h2>
-        <p className="text-base leading-relaxed text-white mt-4">
+        <h2 className="text-2xl font-bold text-[#F4A261]">Contact Us</h2>
+        <p className="text-base leading-relaxed mt-4">
           Have questions or need more information? Feel free to reach out to us
           via the contact form below or through our social media channels.
         </p>
       </div>
 
       {/* Contact Form Section */}
-      <div className="mt-8 p-4 bg-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4 text-[#F4A261]">
-          Get in Touch
-        </h2>
-        <form className="space-y-4">
+      <div className="mt-8 p-6 bg-white rounded-lg shadow-lg">
+        <h3 className="text-2xl font-semibold text-[#F4A261] mb-6">Get in Touch</h3>
+        <form className="space-y-6">
+          {/* Name Field */}
           <div className="flex flex-col">
-            <label
-              htmlFor="name"
-              className="font-medium text-lg text-[#F4A261]"
-            >
+            <label htmlFor="name" className="text-lg font-medium text-[#F4A261] mb-2">
               Name
             </label>
             <input
@@ -31,11 +27,9 @@ const ContactUs = () => {
             />
           </div>
 
+          {/* Email Field */}
           <div className="flex flex-col">
-            <label
-              htmlFor="email"
-              className="font-medium text-lg text-[#F4A261]"
-            >
+            <label htmlFor="email" className="text-lg font-medium text-[#F4A261] mb-2">
               Email
             </label>
             <input
@@ -46,11 +40,9 @@ const ContactUs = () => {
             />
           </div>
 
+          {/* Message Field */}
           <div className="flex flex-col">
-            <label
-              htmlFor="message"
-              className="font-medium text-lg text-[#F4A261]"
-            >
+            <label htmlFor="message" className="text-lg font-medium text-[#F4A261] mb-2">
               Message
             </label>
             <textarea
@@ -60,6 +52,7 @@ const ContactUs = () => {
             ></textarea>
           </div>
 
+          {/* Submit Button */}
           <button
             type="submit"
             className="w-full py-2 px-4 bg-[#F4A261] text-white font-semibold rounded-md hover:bg-[#e08c4a] focus:outline-none focus:ring-2 focus:ring-[#F4A261]"
@@ -67,37 +60,35 @@ const ContactUs = () => {
             Send Message
           </button>
         </form>
+      </div>
 
-        {/* Social Media Links */}
-        <div className="mt-6">
-          <h3 className="text-xl font-semibold mb-3 text-[#F4A261]">
-            Follow Us
-          </h3>
-          <div className="flex space-x-4">
-            <a
-              href="https://facebook.com"
-              className="text-[#F4A261] hover:text-[#e08c4a]"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://twitter.com"
-              className="text-[#F4A261] hover:text-[#e08c4a]"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://instagram.com"
-              className="text-[#F4A261] hover:text-[#e08c4a]"
-            >
-              Instagram
-            </a>
-          </div>
+      {/* Social Media Section */}
+      <div className="mt-8 p-6 bg-white rounded-lg shadow-lg">
+        <h3 className="text-xl font-semibold text-[#F4A261] mb-4">Follow Us</h3>
+        <div className="flex space-x-6">
+          <a
+            href="https://facebook.com"
+            className="text-[#F4A261] hover:text-[#e08c4a] transition-colors"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://twitter.com"
+            className="text-[#F4A261] hover:text-[#e08c4a] transition-colors"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://instagram.com"
+            className="text-[#F4A261] hover:text-[#e08c4a] transition-colors"
+          >
+            Instagram
+          </a>
         </div>
       </div>
 
       {/* Divider Line */}
-      <div className="w-full h-[1px] bg-[#F4A261] mt-2"></div>
+      <div className="w-full h-[1px] bg-[#F4A261] mt-4"></div>
     </>
   );
 };

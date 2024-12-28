@@ -1,10 +1,10 @@
 const GetInvolved = () => {
   return (
-    <>
+    <div className="bg-[#036082] text-white rounded-lg shadow-lg p-6 md:p-12">
       {/* Title Section */}
-      <div className="bg-[#036082] text-white rounded-lg shadow-lg p-6 md:p-12 mb-8">
-        <h2 className="text-xl font-semibold text-[#F4A261]">GET INVOLVED</h2>
-        <p className="text-base leading-relaxed text-white mt-4">
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold text-[#F4A261]">Get Involved</h2>
+        <p className="text-base leading-relaxed mt-4">
           We welcome anyone who shares our mission to help entrepreneurs and
           communities grow. Here are a few ways you can contribute and make a
           difference.
@@ -12,9 +12,9 @@ const GetInvolved = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Volunteer Card */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
           <img
             src="https://via.placeholder.com/300x200"
             alt="Volunteer"
@@ -26,14 +26,14 @@ const GetInvolved = () => {
             </h4>
             <p className="text-sm text-gray-700">
               Volunteering is a great way to give back to the community. Join
-              our network of volunteers who help mentor, teach, and guide budding
-              entrepreneurs.
+              our network of volunteers who help mentor, teach, and guide
+              budding entrepreneurs.
             </p>
           </div>
         </div>
 
         {/* Donate Card */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
           <img
             src="https://via.placeholder.com/300x200"
             alt="Donate"
@@ -52,7 +52,7 @@ const GetInvolved = () => {
         </div>
 
         {/* Partner Card */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
           <img
             src="https://via.placeholder.com/300x200"
             alt="Partner"
@@ -76,13 +76,13 @@ const GetInvolved = () => {
         <h3 className="text-xl font-semibold text-[#F4A261] mb-3">
           Other Ways to Get Involved:
         </h3>
-        <ul className="list-disc pl-5 text-white">
+        <ul className="list-disc pl-6 space-y-2">
           <li>Host an event to raise awareness about entrepreneurship.</li>
           <li>Provide mentorship and guidance to entrepreneurs in your area of expertise.</li>
           <li>Help us spread the word on social media to encourage more participation.</li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
